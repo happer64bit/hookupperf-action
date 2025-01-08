@@ -18,7 +18,7 @@ try {
 
 async function run(): Promise<void> {
     try {
-        const url: string = config.moduleConfig.mapKey;
+        const url: string = config.moduleConfig.map;
         core.info(`URL from config: ${url}`);
     } catch (error) {
         core.setFailed(`Action failed with error: ${(error as Error).message}`);
