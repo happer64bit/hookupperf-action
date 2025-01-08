@@ -1,0 +1,12 @@
+name: Performance Test
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Test Extension
+        uses: happer64bit/hookupperf-action
